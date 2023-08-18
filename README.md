@@ -1,6 +1,6 @@
 Palparcel Web App
 
-Palparcel is a software application that allows users to send, receive, save and spend money from anywhere in the world starting from Africa to every other continent.
+Palparcel is a software application that allows vendors to upload,  and sell their products from anywhere in the world starting from Africa to every other continent.
 Production
 Urls
 production
