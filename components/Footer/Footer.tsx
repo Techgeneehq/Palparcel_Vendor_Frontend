@@ -1,14 +1,14 @@
 import Image from "next/image"
 import { Container, Grid } from "@mui/material"
-import Logo from "../Logo/Logo"
-import Brands from "../Brands/Brands"
-import FooterLinks from "../FooterLinks/FooterLinks"
-import facebook from '@/public/socials/facebook.svg'
-import linkedin from '@/public/socials/linkedin.svg'
-import instagram from '@/public/socials/instagram.svg'
-import twitter from '@/public/socials/twitter.svg'
-import payment from '@/public/icons_payment.png'
-import arrowUp from '@/public/arrow_up.svg'
+import Logo from "@/components/Logo/Logo"
+import Brands from "@/components/Brands/Brands"
+import FooterLinks from "@/components/FooterLinks/FooterLinks"
+import facebook from '@/public/assets/icons/socials/facebook.svg'
+import linkedin from '@/public/assets/icons/socials/linkedin.svg'
+import instagram from '@/public/assets/icons/socials/instagram.svg'
+import twitter from '@/public/assets/icons/socials/twitter.svg'
+import payment from '@/public/assets/icons/icons_payment.png'
+import arrowUp from '@/public/assets/icons/arrow_up.svg'
 
 const aboutArray = [
   {title: "Contact Us", slug: "contact"},

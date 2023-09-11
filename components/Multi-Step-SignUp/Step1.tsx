@@ -51,7 +51,7 @@ const Step1 = () => {
           />
           <label
             htmlFor="vendor"
-            className={`bg-white font-medium px-8 py-4 rounded-3xl text-base text-[#969696] peer-checked/vendor:text-[#FE9900] peer-checked/vendor:bg-[#FE9900]/[0.1] ${checked && "text-[#FE9900] bg-[#FE9900]/[0.1]"}`}
+            className={`bg-white font-medium px-8 py-4 rounded-3xl text-base text-[#969696] peer-checked/vendor:text-[#FE9900] peer-checked/vendor:bg-[#FE9900]/[0.2] ${checked && "text-[#FE9900] bg-[#FE9900]/[0.2]"}`}
           >
             Vendor
           </label>

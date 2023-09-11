@@ -1,10 +1,10 @@
 import Image from 'next/image'
-import aws from '@/public/sponsors/aws.svg'
-import brand3 from '@/public/sponsors/fa-brands-3.svg'
-import brand6 from '@/public/sponsors/fa-brands-6.svg'
-import hooli from '@/public/sponsors/hooli.svg'
-import lyft from '@/public/sponsors/lyft.svg'
-import stripe from '@/public/sponsors/stripe.svg'
+import aws from '@/public/assets/icons/sponsors/aws.svg'
+import brand3 from '@/public/assets/icons/sponsors/fa-brands-3.svg'
+import brand6 from '@/public/assets/icons/sponsors/fa-brands-6.svg'
+import hooli from '@/public/assets/icons/sponsors/hooli.svg'
+import lyft from '@/public/assets/icons/sponsors/lyft.svg'
+import stripe from '@/public/assets/icons/sponsors/stripe.svg'
 
 const brandImg = [aws, brand3, brand6, hooli, lyft, stripe]
 

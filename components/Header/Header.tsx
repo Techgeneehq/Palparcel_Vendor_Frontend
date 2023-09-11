@@ -1,8 +1,8 @@
 import Image from 'next/image'
 import { AppBar, Container } from '@mui/material'
-import Navbar from "../Navbar/Navbar"
-import phone from '@/public/phone.svg'
-import envelope from '@/public/envelope.svg'
+import Navbar from "@/components/Navbar/Navbar"
+import phone from '@/public/assets/icons/phone.svg'
+import envelope from '@/public/assets/icons/envelope.svg'
 
 const Header = () => {
   return (

@@ -3,9 +3,9 @@ import NavigateNextIcon from '@mui/icons-material/NavigateNext';
 import Stack from '@mui/material/Stack';
 import Link from 'next/link';
 import * as React from 'react';
-import FormContainer from '../components/FormContainer/FormContainer';
-import Step1 from '../components/Multi-Login-Step/LoginStep1';
-import Step2 from '../components/Multi-Login-Step/LoginStep2';
+import FormContainer from '@/components/FormContainer/FormContainer';
+import Step1 from '@/components/Multi-Login-Step/LoginStep1';
+import Step2 from '@/components/Multi-Login-Step/LoginStep2';
 
 type CustomSeparatorProps = {
   bStep: number;

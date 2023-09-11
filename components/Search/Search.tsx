@@ -1,10 +1,10 @@
 import Image from "next/image"
-import search from '@/public/search-normal.svg'
+import search_icon from '@/public/assets/icons/search-normal.svg'
 
 const Search = () => {
   return (
     <form className="flex items-center border border-[#FE9900] rounded-full relative overflow-hidden w-full p-0 pl-8">
-      <Image src={search} alt="search icon" />
+      <Image src={search_icon} alt="search icon" />
       <input 
         type="search" 
         name="" 

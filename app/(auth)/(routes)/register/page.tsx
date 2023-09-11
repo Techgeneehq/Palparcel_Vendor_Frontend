@@ -3,13 +3,13 @@ import NavigateNextIcon from '@mui/icons-material/NavigateNext';
 import Stack from '@mui/material/Stack';
 import Link from 'next/link';
 import * as React from 'react';
-import FormContainer from './components/FormContainer/FormContainer';
-import Step1 from './components/Multi-Step-SignUp/Step1';
-import Step2 from './components/Multi-Step-SignUp/Step2';
-import Step3 from './components/Multi-Step-SignUp/Step3';
-import Step4 from './components/Multi-Step-SignUp/Step4';
-import Success from './components/Success/Success';
-import success from '@/public/tick-circle.svg'
+import FormContainer from '@/components/FormContainer/FormContainer';
+import Step1 from '@/components/Multi-Step-SignUp/Step1';
+import Step2 from '@/components/Multi-Step-SignUp/Step2';
+import Step3 from '@/components/Multi-Step-SignUp/Step3';
+import Step4 from '@/components/Multi-Step-SignUp/Step4';
+import Success from '@/components/Success/Success';
+import success_icon from '@/public/assets/icons/tick-circle.svg'
 
 type CustomSeparatorProps = {
   bStep: number;
@@ -201,7 +201,7 @@ export default function Home() {
             )}
           </div>
         </FormContainer>}
-        {submitted && <Success fHeader="Account Created" fSub='Your account have been successfully created' img={success} btn="Verify Your Email Address"  />}
+        {submitted && <Success fHeader="Account Created" fSub='Your account have been successfully created' img={success_icon} btn="Verify Your Email Address"  />}
       </form>
     </main>
   );

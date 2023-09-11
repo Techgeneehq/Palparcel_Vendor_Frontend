@@ -1,9 +1,9 @@
 import { AppBar, Container, Grid } from "@mui/material"
 import Image from "next/image"
-import Logo from "../Logo/Logo"
-import Search from "../Search/Search"
-import profile from '@/public/profile.svg'
-import bag from '@/public/shopping-bag.svg'
+import Logo from "@/components/Logo/Logo"
+import Search from "@/components/Search/Search"
+import profile from '@/public/assets/icons/profile.svg'
+import bag from '@/public/assets/icons/shopping-bag.svg'
 import Link from "next/link"
 
 const Navbar = () => {
