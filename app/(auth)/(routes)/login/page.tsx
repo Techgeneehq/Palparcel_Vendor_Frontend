@@ -1,11 +1,11 @@
 'use client';
+import FormContainer from '@/components/FormContainer/FormContainer';
+import Step1 from '@/components/Multi-Step-Login/Step1';
+import Step2 from '@/components/Multi-Step-Login/Step2';
 import NavigateNextIcon from '@mui/icons-material/NavigateNext';
 import Stack from '@mui/material/Stack';
 import Link from 'next/link';
 import * as React from 'react';
-import FormContainer from '@/components/FormContainer/FormContainer';
-import Step1 from '@/components/Multi-Login-Step/LoginStep1';
-import Step2 from '@/components/Multi-Login-Step/LoginStep2';
 
 type CustomSeparatorProps = {
   bStep: number;
@@ -94,8 +94,8 @@ const Login = () => {
 
   const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
-    setSubmitted(!submitted);
-  }
+    setSubmitted(true);
+  };
 
   const CurrStep = formSteps[formStep];
   console.log(formStep < formSteps.length - 1, formSteps.length - 1, formStep);
@@ -107,7 +107,7 @@ const Login = () => {
         <FormContainer
           fHeader={formHeaders[formStep].fHeader}
           fSub={formHeaders[formStep].fSub}
-          login={  true}
+          login={true}
         >
           <CurrStep />
           <div className="flex justify-between w-full">
@@ -141,6 +141,6 @@ const Login = () => {
       </form>
     </main>
   );
-}
+};
 
-export default Login
+export default Login;

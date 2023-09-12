@@ -17,10 +17,10 @@ const FormContainer = ({ children, fHeader, fSub, login }:FormContainerProps) =>
           <p className="font-normal mb-10 text-base text-[#969696] text-center">{ fSub }</p>
           { children }
           {!login && <p className="mt-[90px] text-center">
-            Already have an account? <Link href="Login" className="ml-1 text-[#FE9900]">Login</Link>
+            Already have an account? <Link href="login" className="ml-1 text-[#FE9900]">Login</Link>
           </p>}
           {login && <p className="mt-[90px] text-center">
-            Can{`'`}t login account? <Link href="ForgotPassword" className="ml-1 text-[#FE9900]">Forget Password</Link>
+            Can{`'`}t login account? <Link href="forgotPassword" className="ml-1 text-[#FE9900]">Forget Password</Link>
           </p>}
         </div>
       </Grid>
