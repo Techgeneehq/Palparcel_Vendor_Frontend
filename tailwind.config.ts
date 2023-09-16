@@ -1,7 +1,7 @@
 import type { Config } from 'tailwindcss'
 
 const config: Config = {
-    // important: true,
+    important: true,
 
   content: [
     './pages/**/*.{js,ts,jsx,tsx,mdx}',
@@ -18,8 +18,7 @@ const config: Config = {
     },
   },
     plugins: [
-        require('tw-elements/dist/plugin'),
-        require('tailwind-scrollbar')({ nocompatible: true }),
+
     ],
 }
 export default config

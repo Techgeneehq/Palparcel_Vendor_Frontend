@@ -3,6 +3,7 @@ import LogoIcon from '@/public/assets/icons/logo.svg';
 // Dashboard Icons
 import OrderDIcon from '@/public/assets/icons/OrderD.svg';
 import NairaIcon from '@/public/assets/icons/naira.svg';
+import NoRecord from '@/public/assets/icons/noRecord.svg';
 import ProductDIcon from '@/public/assets/icons/productD.svg';
 
 // Sidebar Icons
@@ -38,5 +39,6 @@ const Icon = {
   NotificationIcon,
   LogoutIcon,
   goBackIcon,
+  NoRecord,
 };
 export default Icon;

@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+  height: 100vh !important;
+}
+
 .bg-opacity-10 {
   background-color: rgba(
     254,
