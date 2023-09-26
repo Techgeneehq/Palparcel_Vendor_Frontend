@@ -13,7 +13,7 @@ type CardProps = {
 
 const Card = ({ title, icon, amount, color }: CardProps) => {
   return (
-    <div className="bg-white rounded-3xl  h-[165px] pt-10 pb-10 pl-10 pr-8">
+    <div className="bg-white rounded-3xl  pt-10 pb-10 pl-10 pr-8">
       <div className="flex justify-between">
         <div>
           <div className="flex items-center">
