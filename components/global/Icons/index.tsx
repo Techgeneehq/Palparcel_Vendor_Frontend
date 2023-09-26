@@ -21,6 +21,8 @@ import WalletIcon from '@/public/assets/icons/wallet.svg';
 // Header icons
 import goBackIcon from '@/public/assets/icons/goBackButton.svg';
 
+// Register
+import SearchIcon from '@/public/assets/icons/search.svg';
 
 
 const Icon = {
@@ -40,5 +42,6 @@ const Icon = {
   LogoutIcon,
   goBackIcon,
   NoRecord,
+  SearchIcon
 };
 export default Icon;
