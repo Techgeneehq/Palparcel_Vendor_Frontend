@@ -23,7 +23,7 @@ import goBackIcon from '@/public/assets/icons/goBackButton.svg';
 
 // Register
 import SearchIcon from '@/public/assets/icons/search.svg';
-
+import TickIcon from '@/public/assets/icons/tickcircle.svg';
 
 const Icon = {
   LogoIcon,
@@ -42,6 +42,7 @@ const Icon = {
   LogoutIcon,
   goBackIcon,
   NoRecord,
-  SearchIcon
+  SearchIcon,
+  TickIcon
 };
 export default Icon;

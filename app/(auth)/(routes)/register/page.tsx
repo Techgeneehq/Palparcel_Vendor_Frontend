@@ -5,7 +5,7 @@ import Step2 from '@/components/auth/Multi-Step-SignUp/Step2';
 import Step3 from '@/components/auth/Multi-Step-SignUp/Step3';
 import Step4 from '@/components/auth/Multi-Step-SignUp/Step4';
 import Success from '@/components/auth/Success/Success';
-// import success_icon from '@/public/assets/icons/tick-circle.svg';
+import Icon from '@/components/global/Icons';
 import NavigateNextIcon from '@mui/icons-material/NavigateNext';
 import Stack from '@mui/material/Stack';
 import Link from 'next/link';
@@ -207,7 +207,7 @@ export default function Home() {
           <Success
             fHeader="Account Created"
             fSub="Your account have been successfully created"
-            // img={success_icon}
+            img={<Icon.TickIcon/>}
             btn="Verify Your Email Address"
           />
         )}

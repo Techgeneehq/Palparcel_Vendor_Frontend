@@ -3,7 +3,7 @@ import { Grid } from "@mui/material"
 type SuccessProps = {
   fHeader?: string,
   fSub?: string,
-  img?: string,
+  img?: any,
   btn: string,
 }
 
@@ -16,7 +16,7 @@ const Success = ({ fHeader, fSub, img, btn }: SuccessProps) => {
             { fHeader }
           </h3>
           <div className="flex justify-center items-center">
-            {/* <Image src={img} alt={`${img} alert icon`} className="flex justify-center" /> */}
+           {img}
           </div>
           <p className="w-1/2 mx-auto font-normal mt-6 text-base text-[#969696] text-center">
             { fSub }
