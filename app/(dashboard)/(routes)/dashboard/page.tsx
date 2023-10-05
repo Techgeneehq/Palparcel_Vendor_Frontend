@@ -6,7 +6,6 @@ import Icon from '@/components/global/Icons';
 import Card from '@/components/global/cards';
 
 export default function DashboardPage() {
-  //   const router = useRouter();
   return (
   <div>
       <div className="!bg-[#F7F7F7] relative  text-black px-[30px] md:px-[60px] pt-[90px] ">

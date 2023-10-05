@@ -1,4 +1,5 @@
-import { cn } from '@/lib/utils';
+import { cn } from '@/libs/utils';
+
 import { Montserrat } from 'next/font/google';
 
 const montserrat = Montserrat({ weight: ['400', '500'], subsets: ['latin'] });
@@ -10,10 +11,9 @@ type CardProps = {
   amount: string;
 };
 
-
 const Card = ({ title, icon, amount, color }: CardProps) => {
   return (
-    <div className="bg-white rounded-3xl  pt-10 pb-10 pl-10 pr-8">
+    <div className="bg-white rounded-3xl h-[165px] pt-10 pb-10 pl-10 pr-8">
       <div className="flex justify-between">
         <div>
           <div className="flex items-center">
@@ -33,7 +33,7 @@ const Card = ({ title, icon, amount, color }: CardProps) => {
               montserrat.className
             )}
           >
-           {amount}
+            {amount}
           </div>
         </div>
         <div
@@ -50,4 +50,4 @@ const Card = ({ title, icon, amount, color }: CardProps) => {
   );
 };
 
-export default Card
+export default Card;

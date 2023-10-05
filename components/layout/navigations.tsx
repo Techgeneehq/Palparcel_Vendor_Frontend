@@ -9,7 +9,7 @@ const Navigation = () => {
     <aside className="space-y-4 pt-[90.94px] flex flex-col h-full border-r border-solid border-gray-50 bg-white text-white ">
       <div className=" flex-1">
         <Link href="/dashboard" passHref>
-          <div className="flex items-center  pl-[60px] pr-[60.31px] pb-[64.18px] ">
+          <div className="flex items-center  pl-[60px]  pb-[64.18px] ">
             <div className="relative mr-4">
               <Icon.LogoIcon width="166.69" />
             </div>
@@ -26,7 +26,7 @@ const Navigation = () => {
                 tabIndex={0}
                 role="button"
                 aria-label="Log-out"
-                className="text-[#CECECE] flex pl-[60px] text-16 "
+                className="text-[#CECECE] flex pl-[60px]"
               >
                 <Icon.LogoutIcon />
                 <div className="px-4 pb-20">Log-out</div>

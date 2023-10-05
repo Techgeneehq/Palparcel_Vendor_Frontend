@@ -22,6 +22,7 @@ import WalletIcon from '@/public/assets/icons/wallet.svg';
 import goBackIcon from '@/public/assets/icons/goBackButton.svg';
 
 // Register
+import NotificationBellIcon from '@/public/assets/icons/notificationIcon.svg';
 import SearchIcon from '@/public/assets/icons/search.svg';
 import TickIcon from '@/public/assets/icons/tickcircle.svg';
 
@@ -43,6 +44,7 @@ const Icon = {
   goBackIcon,
   NoRecord,
   SearchIcon,
-  TickIcon
+  TickIcon,
+  NotificationBellIcon,
 };
 export default Icon;

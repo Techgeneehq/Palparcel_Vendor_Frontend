@@ -1,4 +1,4 @@
-import { cn } from '@/lib/utils';
+import { cn } from '@/libs/utils';
 import { Montserrat } from 'next/font/google';
 
 const montserrat = Montserrat({ weight: ["400", "500"], subsets: ['latin'] });
