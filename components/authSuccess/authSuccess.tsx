@@ -1,14 +1,15 @@
+'use client'
 import { Grid } from "@mui/material"
-import Image from "next/image"
+import { ReactElement } from 'react';
 
 type SuccessProps = {
   fHeader?: string,
   fSub?: string,
-  img: string,
+  icon: ReactElement,
   btn: string,  
 }
 
-const Success = ({ fHeader, fSub, img, btn }: SuccessProps) => {
+const AuthSuccess = ({ fHeader, fSub, icon, btn }: SuccessProps) => {
   return (
     <Grid className="flex justify-center" container>
       <Grid md={6} xs={10} item>
@@ -17,7 +18,7 @@ const Success = ({ fHeader, fSub, img, btn }: SuccessProps) => {
             { fHeader }
           </h3>
           <div className="flex justify-center items-center">
-            <Image src={img} alt={`${img} alert icon`} className="flex justify-center" />
+            { icon }
           </div>
           <p className="w-1/2 mx-auto font-normal mt-6 text-base text-[#969696] text-center">
             { fSub }
@@ -31,4 +32,4 @@ const Success = ({ fHeader, fSub, img, btn }: SuccessProps) => {
   )
 }
 
-export default Success
+export default AuthSuccess

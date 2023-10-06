@@ -1,6 +1,6 @@
 'use client';
 import { useState } from 'react';
-import FormContainer from '../FormContainer/FormContainer';
+import FormContainer from '@/components/layout/formContainer';
 import Step1 from '../Multi-Step-SignUp/Step1';
 import Step2 from '../Multi-Step-SignUp/Step2';
 import Step3 from '../Multi-Step-SignUp/Step3';

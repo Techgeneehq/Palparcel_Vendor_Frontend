@@ -1,14 +1,10 @@
 import Image from "next/image"
 import { Container, Grid } from "@mui/material"
-import Logo from "@/components/Logo/Logo"
+import Icon from '@/components/global/Icons'
+import Logo from "@/components/logo/logo"
 import Brands from "@/components/Brands/Brands"
-import FooterLinks from "@/components/FooterLinks/FooterLinks"
-import facebook from '@/public/assets/icons/socials/facebook.svg'
-import linkedin from '@/public/assets/icons/socials/linkedin.svg'
-import instagram from '@/public/assets/icons/socials/instagram.svg'
-import twitter from '@/public/assets/icons/socials/twitter.svg'
+import FooterLinks from "@/components/layout/footerLinks"
 import payment from '@/public/assets/icons/icons_payment.png'
-import arrowUp from '@/public/assets/icons/arrow_up.svg'
 
 const aboutArray = [
   {title: "Contact Us", slug: "contact"},
@@ -31,13 +27,13 @@ const moreArray = [
 ]
 
 const socialArray = [
-  {title: facebook, slug: "facebook logo"},
-  {title: linkedin, slug: "linkedin logo"},
-  {title: instagram, slug: "instagram logo"},
-  {title: twitter, slug: "twitter logo"},
+  {icon: <Icon.FacebookIcon />, slug: "facebook logo"},
+  {icon: <Icon.LinkedinIcon />, slug: "linkedin logo"},
+  {icon: <Icon.InstagramIcon />, slug: "instagram logo"},
+  {icon: <Icon.TwitterIcon />, slug: "twitter logo"},
 ]
 
-const Footer = () => {
+const AuthFooter = () => {
   return (
     <div className="w-full mt-24 p-0">
       <Container className="px-20 mb-20" fixed>
@@ -47,32 +43,32 @@ const Footer = () => {
         <Container fixed>
           <Grid className="flex justify-between" container>
             <Grid item xs>
-              <Logo techgene={true} palparcel={false} />
+              <Logo variant="white" />
             </Grid>
             <Grid item xs={9} container>
               <Grid item xs={3}>
-                <FooterLinks 
+                <FooterLinks
                   footerHeading="About Us"
                   footerList={aboutArray}
                   block={true}
                 />
               </Grid>
               <Grid item xs={3}>
-                <FooterLinks 
+                <FooterLinks
                   footerHeading="Buying on Techgene"
                   footerList={companyArray}
                   block={true}
                 />
               </Grid>
               <Grid item xs={3}>
-                <FooterLinks 
+                <FooterLinks
                   footerHeading="More Info"
                   footerList={moreArray}
                   block={true}
                 />
               </Grid>
               <Grid item xs={3}>
-                <FooterLinks 
+                <FooterLinks
                   footerHeading="Connect With Us"
                   footerList={socialArray}
                   inline={true}
@@ -82,7 +78,7 @@ const Footer = () => {
           </Grid>
         </Container>
       </div>
-      <div className="w-full bg-[#FAC100]  py-6 flex justify-center items-center">
+      <div className="w-full bg-[#141414] text-white  py-6 flex justify-center items-center">
         <Container fixed>
           <Grid className="flex justify-between items-center" container>
             <Grid item xs={3}>
@@ -92,7 +88,11 @@ const Footer = () => {
               <Image src={payment} alt="picture of some payment companies" />
             </Grid>
             <Grid item xs={3}>
-              <p className="flex justify-end">Scroll to top <Image className="ml-1" src={arrowUp} alt="arrow up icon" /></p>
+              <div className="flex items-center justify-end">
+                <div className="mr-2">Scroll to top</div> 
+                <div className="w-5 h-5 rounded bg-white flex items-center justify-center"><Icon.BackToTopIcon /></div> 
+                
+              </div>
             </Grid>
           </Grid>
         </Container>
@@ -101,4 +101,4 @@ const Footer = () => {
   )
 }
 
-export default Footer
+export default AuthFooter

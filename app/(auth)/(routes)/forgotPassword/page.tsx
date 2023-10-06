@@ -3,11 +3,11 @@ import * as React from 'react';
 import Link from 'next/link';
 import NavigateNextIcon from '@mui/icons-material/NavigateNext';
 import Stack from '@mui/material/Stack';
-import FormContainer from '@/components/FormContainer/FormContainer';
+import Icon from '@/components/global/Icons';
+import FormContainer from '@/components/layout/formContainer';
 import Step1 from '@/components/Multi-Step-ForgotPassword/Step1';
 import Step2 from '@/components/Multi-Step-ForgotPassword/Step2';
-import Success from '@/components/Success/Success';
-import success_icon from '@/public/assets/icons/tick-circle.svg'
+import AuthSuccess from '@/components/authSuccess/authSuccess';
 
 type CustomSeparatorProps = {
   bStep: number;
@@ -139,7 +139,7 @@ const ForgotPassword = () => {
             )}
           </div>
         </FormContainer>}
-        {submitted && <Success fHeader="Password Reset" fSub='Your have successfully reset your password' img={success_icon} btn="login"  />}
+        {submitted && <AuthSuccess fHeader="Password Reset" fSub='Your have successfully reset your password' icon={<Icon.SuccessIcon />} btn="login"  />}
       </form>
     </main>
   );

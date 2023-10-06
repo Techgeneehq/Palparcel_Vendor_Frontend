@@ -1,10 +1,10 @@
 import Image from 'next/image'
-import apple from '@/public/assets/icons/sponsors/apple.svg'
-import hp from '@/public/assets/icons/sponsors/hp.svg'
-import intel from '@/public/assets/icons/sponsors/intel.svg'
-import lenovo from '@/public/assets/icons/sponsors/lenovo.svg'
-import samsung from '@/public/assets/icons/sponsors/samsung.svg'
-import vivo from '@/public/assets/icons/sponsors/vivo.svg'
+import apple from '@/public/assets/images/sponsors/apple.png'
+import hp from '@/public/assets/images/sponsors/hp.png'
+import intel from '@/public/assets/images/sponsors/intel.png'
+import lenovo from '@/public/assets/images/sponsors/lenovo.png'
+import samsung from '@/public/assets/images/sponsors/samsung.png'
+import vivo from '@/public/assets/images/sponsors/vivo.png'
 
 const brandImg = [apple, hp, intel, lenovo, samsung, vivo]
 

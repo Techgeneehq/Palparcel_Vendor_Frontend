@@ -1,13 +1,11 @@
-import Image from "next/image"
-import search_icon from '@/public/assets/icons/search-normal.svg'
+import Icon from "../global/Icons"
 
-const Search = () => {
+const AuthNavSearch = () => {
   return (
     <form className="flex items-center border border-[#FE9900] rounded-full relative overflow-hidden w-full p-0 pl-8">
-      <Image src={search_icon} alt="search icon" />
+      <Icon.SearchIcon className='w-1/12' />
       <input 
         type="search" 
-        name="" 
         placeholder="Search essential, groceries and many more..." 
         className="w-9/12 ml-6 py-4 bg-transparent focus:border-0 focus:outline-none text-[#969696] text-sm"
       />
@@ -16,4 +14,4 @@ const Search = () => {
   )
 }
 
-export default Search
+export default AuthNavSearch

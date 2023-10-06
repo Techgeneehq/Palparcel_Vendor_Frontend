@@ -1,23 +1,16 @@
 import '@/app/globals.css'
-import { Montserrat } from 'next/font/google'
-import Header from '@/components/Header/Header'
-import Footer from '@/components/Footer/Footer'
 import { CssBaseline } from '@mui/material'
+import AuthNav from '@/components/layout/authNav';
+import AuthFooter from '@/components/layout/authFooter';
 
-// const inter = Inter({ subsets: ['latin'] })
-const montserrat = Montserrat({subsets: ['latin'], variable: '--font-montserrat', display: 'swap'})
-
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode
-}) {
+const AuthLayout = ({ children }: { children: React.ReactNode }) => {
   return (
-    <main className={montserrat.variable}>
+    <main className='h-full w-full font-mont auth-main'>
       <CssBaseline />
-      <Header />
-        {children}
-      <Footer />
+      <AuthNav />
+      {children}
+      <AuthFooter />
     </main>
-  )
-}
+  );
+};
+export default AuthLayout;

@@ -1,5 +1,5 @@
 'use client';
-import FormContainer from '@/components/FormContainer/FormContainer';
+import FormContainer from '@/components/layout/formContainer';
 import Step1 from '@/components/Multi-Step-Login/Step1';
 import Step2 from '@/components/Multi-Step-Login/Step2';
 import NavigateNextIcon from '@mui/icons-material/NavigateNext';

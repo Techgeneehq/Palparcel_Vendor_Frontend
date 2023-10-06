@@ -2,22 +2,34 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+.bg-opacity-10 {
+  background-color: rgba(
+    254,
+    153,
+    0,
+    0.1
+  ); /* Use the desired color and opacity */
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+.carousel-indicators {
+  position: absolute;
+  right: 0;
+  bottom: -50px !important;
 }
 
-body {
-  font-family: var(--font-montserrat);
+.carousel-indicators [data-coreui-target] {
+  width: 34px !important;
+  height: 8px !important;
+  border: 0px solid white !important;
+  border-radius: 16px !important;
+}
+
+.carousel-dark .carousel-indicators [data-coreui-target] {
+  background-color: #fe9900 !important;
+}
+
+.carousel-indicators .active {
+  opacity: 1;
 }
 
 /* input normal state */

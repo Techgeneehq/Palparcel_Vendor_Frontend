@@ -1,8 +1,10 @@
-import Image from "next/image";
+import Link from 'next/link';
+import { ReactElement } from 'react';
 
 interface FooterList {
-  title: string;
-  slug: string;
+  title?: string;
+  slug?: string;
+  icon?: ReactElement;
 }
 
 type FooterLinksProps = {
@@ -18,13 +20,19 @@ const FooterLinks = ({ footerHeading, footerList, inline = false, block = false 
       <h6 className="text-sm font-normal text-white mb-4">{ footerHeading }</h6>
       {block && <ul className="text-sm font-normal text-[#9E9E9E]">
         {footerList.map(({ slug, title }) => (
-          <li key={slug} className="mb-3">{title}</li>
+          <li key={slug} className="mb-3">
+            <Link href="#">
+            {title}
+            </Link>
+          </li>
         ))}
       </ul>}
       {inline && <ul className="flex items-center text-sm font-normal text-[#9E9E9E]">
-        {footerList.map(({ slug, title }) => (
+        {footerList.map(({ slug, icon }) => (
           <li key={slug} className="mb-3 mx-2">
-            <Image src={title} alt={slug} />
+            <Link href="#">
+              {icon}
+            </Link>
           </li>
         ))}
       </ul>}

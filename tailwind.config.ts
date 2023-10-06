@@ -1,6 +1,8 @@
-import type { Config } from 'tailwindcss';
+import type { Config } from 'tailwindcss'
 
 const config: Config = {
+    // important: true,
+
   content: [
     './pages/**/*.{js,ts,jsx,tsx,mdx}',
     './components/**/*.{js,ts,jsx,tsx,mdx}',
@@ -14,10 +16,13 @@ const config: Config = {
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
       fontFamily: {
-        montserrat: ['var(--font-montserrat)'],
+        montserrat: ['var(--font-mont)'],
       },
     },
   },
-  plugins: [],
-};
-export default config;
+    plugins: [
+        require('tw-elements/dist/plugin'),
+        require('tailwind-scrollbar')({ nocompatible: true }),
+    ],
+}
+export default config
