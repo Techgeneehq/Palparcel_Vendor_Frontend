@@ -16,8 +16,13 @@
     "prettier": "prettier --write ."
   },
   "dependencies": {
-    "@coreui/coreui": "^4.3.0",
-    "@coreui/react": "^4.9.2",
+    "@coreui/coreui": "^5.0.0-alpha.1",
+    "@coreui/react": "^5.0.0-alpha.0",
+    "@emotion/react": "^11.11.1",
+    "@emotion/styled": "^11.11.0",
+    "@mui/icons-material": "^5.14.6",
+    "@mui/material": "^5.14.5",
+    "@mui/x-data-grid": "^6.16.1",
     "@radix-ui/react-avatar": "^1.0.3",
     "@svgr/webpack": "^8.1.0",
     "@types/node": "20.5.0",

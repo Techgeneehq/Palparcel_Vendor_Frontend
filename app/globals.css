@@ -2,10 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-  height: 100vh !important;
-}
-
 .bg-opacity-10 {
   background-color: rgba(
     254,
@@ -34,4 +30,92 @@ body {
 
 .carousel-indicators .active {
   opacity: 1;
+}
+
+/* input normal state */
+.css-1n4twyu-MuiInputBase-input-MuiOutlinedInput-input, .css-1d3z3hw-MuiOutlinedInput-notchedOutline {
+  border-radius: 24px;
+  border: 1px solid #CECECE;
+  color: #001128;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal; 
+  padding: 16px 32px;
+  font-family: var(--font-montserrat);
+}
+
+/* input for password */
+.css-154xyx0-MuiInputBase-root-MuiOutlinedInput-root {
+  border-radius: 24px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 16px;
+}
+
+/* show text for password */
+.css-1pnmrwp-MuiTypography-root {
+  color: #FE9900;
+  font-family: var(--font-montserrat);
+  font-size: 12px;
+  font-weight: 400;
+  line-height: normal; 
+  cursor: pointer;
+}
+
+.css-1n4twyu-MuiInputBase-input-MuiOutlinedInput-input {
+  border: none;
+}
+
+/* input hover state */
+.css-1n4twyu-MuiInputBase-input-MuiOutlinedInput-input:focus, .css-1n4twyu-MuiInputBase-input-MuiOutlinedInput-input:hover, .css-md26zr-MuiInputBase-root-MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline, .css-154xyx0-MuiInputBase-root-MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline, .css-1yk1gt9-MuiInputBase-root-MuiOutlinedInput-root-MuiSelect-root.Mui-focused .MuiOutlinedInput-notchedOutline {
+  border-color: #FE9900;
+  border-width: 1px;
+}
+
+/* label normal state */
+.css-1pysi21-MuiFormLabel-root-MuiInputLabel-root, .css-14s5rfu-MuiFormLabel-root-MuiInputLabel-root {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal; 
+  color: #CECECE;
+  left: 24px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* label active state */
+.css-1jy569b-MuiFormLabel-root-MuiInputLabel-root {
+  left: 28px;
+  top: 3px;
+  font-family: var(--font-montserrat);
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal; 
+  color: #001128;
+}
+
+/* label active state */
+.css-1jy569b-MuiFormLabel-root-MuiInputLabel-root.Mui-focused {
+  color: #001128;
+}
+
+/* select state */
+.css-11u53oe-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input.css-11u53oe-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input.css-11u53oe-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input {
+  padding-left: 32px;
+}
+
+/* Dashboard Tabs */
+
+/* Selected tab state */
+.css-1ujykiq-MuiButtonBase-root-MuiTab-root.Mui-selected {
+  color: #fff ;
+  border-radius: 24px;
+  background: #FE9900; 
+}
+
+.css-1aquho2-MuiTabs-indicator {
+  display: none;
 }
