@@ -30,7 +30,7 @@ export default function DashboardPage() {
           icon={<Icon.OrderDIcon />}
         />
       </div>
-      <SimpleSlider/>
+      <SimpleSlider />
     </div>
   );
 }

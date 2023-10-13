@@ -5,7 +5,7 @@ const montserrat = Montserrat({ weight: ["400", "500"], subsets: ['latin'] });
 
 type HeadingProps = {
   title: string;
-  desc: string;
+  desc?: string;
 };
 
 const Heading = ({ title, desc }: HeadingProps) => {

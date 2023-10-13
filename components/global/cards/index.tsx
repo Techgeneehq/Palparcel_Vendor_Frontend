@@ -20,8 +20,7 @@ const Card = ({ title, icon, amount, color }: CardProps) => {
             {icon}
             <div
               className={cn(
-                'pl-4 text-[#001128]  text-base font-montserrat font-normal',
-                montserrat.className
+                'pl-4 text-[#001128]  text-base font-mont font-normal',
               )}
             >
               {title}
@@ -29,8 +28,7 @@ const Card = ({ title, icon, amount, color }: CardProps) => {
           </div>
           <div
             className={cn(
-              'pt-4 text-[#001128]  text-2xl  font-medium font-montserrat',
-              montserrat.className
+              'pt-4 text-[#001128]  text-2xl  font-medium font-mont',
             )}
           >
            {amount}
@@ -40,7 +38,6 @@ const Card = ({ title, icon, amount, color }: CardProps) => {
           className={cn(
             'text-right text-base  font-medium leading-relaxed',
             color,
-            montserrat.className
           )}
         >
           0

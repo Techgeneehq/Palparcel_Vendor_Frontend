@@ -106,3 +106,16 @@
 .css-11u53oe-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input.css-11u53oe-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input.css-11u53oe-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input {
   padding-left: 32px;
 }
+
+/* Dashboard Tabs */
+
+/* Selected tab state */
+.css-1ujykiq-MuiButtonBase-root-MuiTab-root.Mui-selected {
+  color: #fff ;
+  border-radius: 24px;
+  background: #FE9900; 
+}
+
+.css-1aquho2-MuiTabs-indicator {
+  display: none;
+}
