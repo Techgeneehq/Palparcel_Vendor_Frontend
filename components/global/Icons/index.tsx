@@ -1,8 +1,14 @@
 import LogoIcon from '@/public/assets/icons/logo.svg';
 
+
+import NoRecord from '@/public/assets/icons/noRecord.svg';
+
+// Register
+import NotificationBellIcon from '@/public/assets/icons/notificationIcon.svg';
+import TickIcon from '@/public/assets/icons/tickcircle.svg';
 // Dashboard Icons
-import OrderDIcon from '@/public/assets/icons/orderD.svg';
 import NairaIcon from '@/public/assets/icons/naira.svg';
+import OrderDIcon from '@/public/assets/icons/orderD.svg';
 import ProductDIcon from '@/public/assets/icons/productD.svg';
 import PurchaseIcon from '@/public/assets/icons/purchase.svg';
 import RefundIcon from '@/public/assets/icons/refund.svg';
@@ -24,18 +30,18 @@ import goBackIcon from '@/public/assets/icons/goBackButton.svg';
 
 // Social Icons
 import FacebookIcon from '@/public/assets/icons/socials/facebook.svg';
-import LinkedinIcon from '@/public/assets/icons/socials/linkedin.svg';
 import InstagramIcon from '@/public/assets/icons/socials/instagram.svg';
+import LinkedinIcon from '@/public/assets/icons/socials/linkedin.svg';
 import TwitterIcon from '@/public/assets/icons/socials/twitter.svg';
 
 // Topbar Icons
-import PhoneIcon from '@/public/assets/icons/phone.svg';
 import EnvelopeIcon from '@/public/assets/icons/envelope.svg';
+import PhoneIcon from '@/public/assets/icons/phone.svg';
 
 // AuthNav Icons
-import SearchIcon from '@/public/assets/icons/search.svg';
-import ProfileIcon from '@/public/assets/icons/profile.svg';
 import CategoryIcon from '@/public/assets/icons/category-2.svg';
+import ProfileIcon from '@/public/assets/icons/profile.svg';
+import SearchIcon from '@/public/assets/icons/search.svg';
 import ShoppingBagIcon from '@/public/assets/icons/shoppingBag.svg';
 
 // AuthFFForm Icons
@@ -74,5 +80,8 @@ const Icon = {
   SuccessIcon,
   PurchaseIcon,
   RefundIcon,
+  NoRecord,
+  NotificationBellIcon,
+  TickIcon,
 };
 export default Icon;
