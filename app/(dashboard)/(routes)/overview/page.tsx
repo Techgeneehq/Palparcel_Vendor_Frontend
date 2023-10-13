@@ -156,9 +156,9 @@ const itemData = [
 
 const contentData = [
   {index: 0, children: <DashTable rows={rows} columns={columns} />},
-  {index: 1, children: <Icon.PurchaseIcon />},
-  {index: 2, children: <Icon.RefundIcon />},
-  {index: 3, children: <Icon.CategoryIcon />},
+  {index: 1, children: <DashTable rows={rows} columns={columns} />},
+  {index: 2, children: <DashTable rows={rows} columns={columns} />},
+  {index: 3, children: <DashTable rows={rows} columns={columns} />},
 ]
 
 const Overview = () => {
