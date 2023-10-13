@@ -1,7 +1,7 @@
 import { Grid } from '@mui/material';
 import Icon from '../global/Icons';
 import UserAvatar from '../global/avatar/user-avatar';
-// import Search from '../global/search';
+import Search from '../global/search';
 import Heading from './heading';
 
 const Header = () => {
@@ -17,7 +17,7 @@ const Header = () => {
         <Heading title="Welcome back!" desc="Iyene" />
       </Grid>
       <Grid className="hidden lg:block" item xs={5}>
-        {/* <Search placeholder="Search product..." /> */}
+        <Search placeholder="Search product..." />
       </Grid>
       <Icon.NotificationBellIcon className="ml-[60px]" />
     </Grid>
