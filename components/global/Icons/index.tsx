@@ -5,7 +5,7 @@ import NoRecord from '@/public/assets/icons/noRecord.svg';
 
 // Register
 import NotificationBellIcon from '@/public/assets/icons/notificationIcon.svg';
-import TickIcon from '@/public/assets/icons/tickcircle.svg';
+// import TickIcon from '@/public/assets/icons/tickCircle.svg';
 // Dashboard Icons
 import NairaIcon from '@/public/assets/icons/naira.svg';
 import OrderDIcon from '@/public/assets/icons/orderD.svg';
@@ -82,6 +82,6 @@ const Icon = {
   RefundIcon,
   NoRecord,
   NotificationBellIcon,
-  TickIcon,
+//   TickIcon,
 };
 export default Icon;
