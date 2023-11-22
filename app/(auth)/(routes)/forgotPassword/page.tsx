@@ -8,6 +8,7 @@ import FormContainer from '@/components/layout/formContainer';
 import Step1 from '@/components/Multi-Step-ForgotPassword/Step1';
 import Step2 from '@/components/Multi-Step-ForgotPassword/Step2';
 import AuthSuccess from '@/components/authSuccess/authSuccess';
+import AuthPageName from '@/components/authPageName/authPageName';
 
 type CustomSeparatorProps = {
   bStep: number;
@@ -52,7 +53,7 @@ const CustomSeparator = ({ bStep }: CustomSeparatorProps) => {
       href="#"
       onClick={handleClick}
       className={`relative after:content-[''] after:absolute after:top-[269%] after:left-0 after:w-full after:h-[1px] hover:no-underline ${
-        bStep === 0 && 'text-[#FE9900]'
+        bStep === 0 && 'text-[#7132A5]'
       } ${bStep > 0 && 'text-[#CECECE]'}`}
       // ${!bStep && "hidden"}
     >
@@ -66,7 +67,7 @@ const CustomSeparator = ({ bStep }: CustomSeparatorProps) => {
         bStep < 1
           ? 'hidden'
           : bStep === 1
-          ? 'visible text-[#FE9900]'
+          ? 'visible text-[#7132A5]'
           : bStep > 1
           ? 'text-[#CECECE]'
           : ''
@@ -78,9 +79,14 @@ const CustomSeparator = ({ bStep }: CustomSeparatorProps) => {
   ];
 
   return (
-    <Stack spacing={2} className="mb-20">
-      <section className="bg-[#FCFCFC] flex items-center font-normal px-28 py-9 text-[#CECECE] text-sm border-b border-[#DEDEDE] relative">
-        {breadcrumbs}
+    <Stack spacing={2} className="mt-8 md:mt-0 mb-20">
+      <section className="bg-[#FCFCFC] flex items-center font-normal p-6 md:px-28 md:py-4 text-[#CECECE] text-sm border-b border-[#DEDEDE] relative">
+        <div className="flex flex-col">
+          <AuthPageName title='Forgot Password' />
+          <div className="flex">
+            {breadcrumbs}
+          </div>
+        </div>
       </section>
     </Stack>
   );
@@ -115,7 +121,7 @@ const ForgotPassword = () => {
             {formStep > 0 && (
               <button
                 type="button"
-                className="bg-[#FE9900] flex font-medium items-center px-6 py-3 rounded-3xl text-center text-white text-base"
+                className="bg-[#7132A5] flex font-medium items-center px-6 py-3 rounded-3xl text-center text-white text-base"
                 onClick={handlePrevStep}
               >
                 Prev
@@ -124,7 +130,7 @@ const ForgotPassword = () => {
             {formStep === 0 && (
               <button
                 type="button"
-                className="bg-[#FE9900] flex font-medium items-center px-6 py-3 rounded-3xl text-center text-white text-base"
+                className="bg-[#7132A5] flex font-medium items-center px-6 py-3 rounded-3xl text-center text-white text-base"
                 onClick={handleNextStep}
               >
                 Continue
@@ -132,7 +138,7 @@ const ForgotPassword = () => {
             ) }{formStep >= formSteps.length - 1 && (
               <button
                 type="submit"
-                className="bg-[#FE9900] flex font-medium items-center px-6 py-3 rounded-3xl text-center text-white text-base"
+                className="bg-[#7132A5] flex font-medium items-center px-6 py-3 rounded-3xl text-center text-white text-base"
               >
                 Submit
               </button>

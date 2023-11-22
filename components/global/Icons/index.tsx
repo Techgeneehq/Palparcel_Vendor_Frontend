@@ -43,6 +43,11 @@ import CategoryIcon from '@/public/assets/icons/category-2.svg';
 import ProfileIcon from '@/public/assets/icons/profile.svg';
 import SearchIcon from '@/public/assets/icons/search.svg';
 import ShoppingBagIcon from '@/public/assets/icons/shoppingBag.svg';
+import MenuIcon from '@/public/assets/icons/menu.svg';
+import ShoppingBagWhiteIcon from '@/public/assets/icons/shopping-bag-white.svg';
+
+// AuthBreadCrumb Icons
+import BackArrowIcon from '@/public/assets/icons/arrow-left.svg';
 
 // AuthFFForm Icons
 import SuccessIcon from '@/public/assets/icons/tickCircle.svg';
@@ -83,5 +88,8 @@ const Icon = {
   NoRecord,
   NotificationBellIcon,
 //   TickIcon,
+  MenuIcon,
+  ShoppingBagWhiteIcon,
+  BackArrowIcon,
 };
 export default Icon;

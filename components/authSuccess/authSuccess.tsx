@@ -1,4 +1,5 @@
 'use client'
+import { useRouter } from "next/navigation";
 import { Grid } from "@mui/material"
 import { ReactElement } from 'react';
 
@@ -10,6 +11,7 @@ type SuccessProps = {
 }
 
 const AuthSuccess = ({ fHeader, fSub, icon, btn }: SuccessProps) => {
+  const router = useRouter();
   return (
     <Grid className="flex justify-center" container>
       <Grid md={6} xs={10} item>
@@ -24,7 +26,7 @@ const AuthSuccess = ({ fHeader, fSub, icon, btn }: SuccessProps) => {
             { fSub }
           </p>
           <div className="flex justify-center items-center mt-9">
-            <button className="flex py-3 px-6 text-base text-white font-medium rounded-3xl bg-[#FE9900]">{ btn }</button>
+            <button onClick={() => router.push('/login')} className="flex py-3 px-6 text-base text-white font-medium rounded-3xl bg-[#7132A5]">{ btn }</button>
           </div>
         </div>
       </Grid>
