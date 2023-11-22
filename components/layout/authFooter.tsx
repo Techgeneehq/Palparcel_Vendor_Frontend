@@ -36,63 +36,56 @@ const socialArray = [
 const AuthFooter = () => {
   return (
     <div className="w-full mt-24 p-0">
-      <Container className="px-20 mb-20" fixed>
+      <Container className="px-1 md:px-20 md:mb-20" fixed>
         <Brands />
       </Container>
-      <div className="w-full bg-[#141414] pt-8 pb-36 flex justify-center items-start">
+      <div className="w-full bg-[#7132A5] pt-8 md:pb-16 lg:pb-36 flex justify-center items-start">
         <Container fixed>
           <Grid className="flex justify-between" container>
-            <Grid item xs>
+            <Grid item xs={12} sm={3}>
               <Logo variant="white" />
+              <div className="w-full mt-[60px]">
+                <FooterLinks
+                    footerHeading="Connect With Us"
+                    footerList={socialArray}
+                    inline={true}
+                  />
+              </div>
             </Grid>
-            <Grid item xs={9} container>
-              <Grid item xs={3}>
+            <Grid item xs={12} sm={12} md={9} container className="mt-5 md:mt-0">
+              <Grid item xs={12} sm={4}>
                 <FooterLinks
                   footerHeading="About Us"
                   footerList={aboutArray}
                   block={true}
                 />
               </Grid>
-              <Grid item xs={3}>
+              <Grid item xs={12} sm={4}>
                 <FooterLinks
                   footerHeading="Buying on Techgene"
                   footerList={companyArray}
                   block={true}
                 />
               </Grid>
-              <Grid item xs={3}>
+              <Grid item xs={12} sm={4}>
                 <FooterLinks
                   footerHeading="More Info"
                   footerList={moreArray}
                   block={true}
                 />
               </Grid>
-              <Grid item xs={3}>
-                <FooterLinks
-                  footerHeading="Connect With Us"
-                  footerList={socialArray}
-                  inline={true}
-                />
-              </Grid>
             </Grid>
           </Grid>
         </Container>
       </div>
-      <div className="w-full bg-[#141414] text-white  py-6 flex justify-center items-center">
+      <div className="w-full bg-[#7132A5] text-white py-6 flex justify-center items-center">
         <Container fixed>
           <Grid className="flex justify-between items-center" container>
-            <Grid item xs={3}>
+            <Grid item xs={12} sm={6}>
               <p>© 2023Techgene , Inc.</p>
             </Grid>
-            <Grid item xs={3}>
-              <Image src={payment} alt="picture of some payment companies" />
-            </Grid>
-            <Grid item xs={3}>
-              <div className="flex items-center justify-end">
-                <div className="mr-2">Scroll to top</div> 
-                <div className="w-5 h-5 rounded bg-white flex items-center justify-center"><Icon.BackToTopIcon /></div> 
-                
-              </div>
+            <Grid item xs={12} sm={6}>
+              <Image src={payment} alt="picture of some payment companies" className="flex md:ml-auto" />
             </Grid>
           </Grid>
         </Container>

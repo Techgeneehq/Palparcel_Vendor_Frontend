@@ -11,8 +11,8 @@ const brandImg = [apple, hp, intel, lenovo, samsung, vivo]
 const Brands = () => {
   return (
     <>
-      <h5 className='font-montserrat font-medium mb-8 text-center text-lg text-black w-full'>Our Partners</h5>
-      <div className="w-full grid grid-cols-6 gap-8 py-12">
+      <h5 className='font-montserrat font-medium md:mb-8 text-center text-lg text-black w-full'>Our Partners</h5>
+      <div className="w-full grid grid-cols-6 gap-2 md:gap-4 lg:gap-8 py-6 lg:py-12">
         {brandImg.map((b, index) => (
           <div key={index} className="flex justify-center items-center">
             <Image className='h-full' src={b} alt="brand images of sponsors" />

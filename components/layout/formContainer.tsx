@@ -17,7 +17,7 @@ const FormContainer = ({
   return (
     <Grid className="flex justify-center" container>
       <Grid md={6} xs={10} item>
-        <div className="border border-[#DEDEDE] px-32 py-20 rounded-3xl w-full">
+        <div className="border border-[#DEDEDE] px-5 md:px-32 py-[60px] md:py-20 rounded-3xl w-full">
           <h3 className="capitalize font-medium mb-4 text-2xl text-black text-center">
             {fHeader}
           </h3>
@@ -28,16 +28,16 @@ const FormContainer = ({
           {!login && (
             <p className="mt-[90px] text-center">
               Already have an account?{' '}
-              <Link href="login" className="ml-1 text-[#FE9900]">
+              <Link href="login" className="ml-1 text-[#7132A5]">
                 Login
               </Link>
             </p>
           )}
           {login && (
             <p className="mt-[90px] text-center">
-              Can{`'`}t login account?{' '}
-              <Link href="forgotPassword" className="ml-1 text-[#FE9900]">
-                Forget Password
+              Don{`'`}t have an account?{' '}
+              <Link href="register" className="ml-1 text-[#7132A5]">
+                Sign Up
               </Link>
             </p>
           )}

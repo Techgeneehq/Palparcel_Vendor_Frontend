@@ -1,12 +1,11 @@
+/* eslint-disable no-unused-vars */
 'use client';
 import { useState } from 'react';
+import { useRouter } from 'next/navigation';
 import FormContainer from '@/components/layout/formContainer';
 import Step1 from '../Multi-Step-SignUp/Step1';
-import Step2 from '../Multi-Step-SignUp/Step2';
-import Step3 from '../Multi-Step-SignUp/Step3';
-import Step4 from '../Multi-Step-SignUp/Step4';
 
-const formSteps = [Step1, Step2, Step3, Step4];
+const formSteps = [Step1];
 
 const formHeaders = [
   {
@@ -34,9 +33,11 @@ const formHeaders = [
 const MultiStep = () => {
   const [formStep, setFormStep] = useState(0);
 
-  const handleNextStep = () => setFormStep((prevStep) => prevStep + 1);
+  const router = useRouter();
 
-  const handlePrevStep = () => setFormStep((prevStep) => prevStep - 1);
+  // const handleNextStep = () => setFormStep((prevStep) => prevStep + 1);
+
+  // const handlePrevStep = () => setFormStep((prevStep) => prevStep - 1);
 
   const CurrStep = formSteps[formStep];
 
@@ -53,7 +54,6 @@ const MultiStep = () => {
             <button
               type="button"
               className="bg-[#FE9900] flex font-medium items-center px-6 py-3 rounded-3xl text-center text-white text-base"
-              onClick={handlePrevStep}
             >
               Prev
             </button>
@@ -62,7 +62,7 @@ const MultiStep = () => {
             <button
               type="button"
               className="bg-[#FE9900] flex font-medium items-center px-6 py-3 rounded-3xl text-center text-white text-base"
-              onClick={handleNextStep}
+              onClick={() => router.push('/dashboard')}
             >
               Continue
             </button>
@@ -70,7 +70,7 @@ const MultiStep = () => {
             <button
               type="button"
               className="bg-[#FE9900] flex font-medium items-center px-6 py-3 rounded-3xl text-center text-white text-base"
-              onClick={handleNextStep}
+              onClick={() => router.push('/dashboard')}
             >
               Submit
             </button>

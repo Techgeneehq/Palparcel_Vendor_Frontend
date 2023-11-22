@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+  font-family: 'Montserrat', sans-serif;
+}
+
 .bg-opacity-10 {
   background-color: rgba(
     254,
@@ -25,7 +31,7 @@
 }
 
 .carousel-dark .carousel-indicators [data-coreui-target] {
-  background-color: #fe9900 !important;
+  background-color: #7132A5 !important;
 }
 
 .carousel-indicators .active {
@@ -55,7 +61,7 @@
 
 /* show text for password */
 .css-1pnmrwp-MuiTypography-root {
-  color: #FE9900;
+  color: #7132A5;
   font-family: var(--font-montserrat);
   font-size: 12px;
   font-weight: 400;
@@ -69,7 +75,7 @@
 
 /* input hover state */
 .css-1n4twyu-MuiInputBase-input-MuiOutlinedInput-input:focus, .css-1n4twyu-MuiInputBase-input-MuiOutlinedInput-input:hover, .css-md26zr-MuiInputBase-root-MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline, .css-154xyx0-MuiInputBase-root-MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline, .css-1yk1gt9-MuiInputBase-root-MuiOutlinedInput-root-MuiSelect-root.Mui-focused .MuiOutlinedInput-notchedOutline {
-  border-color: #FE9900;
+  border-color: #7132A5;
   border-width: 1px;
 }
 
@@ -113,7 +119,7 @@
 .css-1ujykiq-MuiButtonBase-root-MuiTab-root.Mui-selected {
   color: #fff ;
   border-radius: 24px;
-  background: #FE9900; 
+  background: #7132A5; 
 }
 
 .css-1aquho2-MuiTabs-indicator {
